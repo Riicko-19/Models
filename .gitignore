@@ -1,0 +1,7 @@
+# Whitelist: only the Clinical AI project is tracked; everything else in this folder stays local.
+/*
+!/.gitignore
+!/README.md
+!/clinical_cnn_rnn.ipynb
+!/xray_conditional_gan.ipynb
+!/clinical_ai_app/
