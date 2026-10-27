@@ -4,7 +4,7 @@ Three deep-learning models for real clinical problems, trained on public expert-
 
 | Notebook | Problem | Data | Model |
 |---|---|---|---|
-| [`clinical_cnn_rnn.ipynb`](clinical_cnn_rnn.ipynb) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riicko-19/Models/blob/main/clinical_cnn_rnn.ipynb) | **A.** Pneumonia screening from pediatric chest X-rays<br>**B.** Arrhythmia detection from ECG heartbeats | Kermany et al. 2018 (5,856 X-rays)<br>MIT-BIH Arrhythmia DB (~100k beats) | EfficientNet-B0 transfer learning + Grad-CAM<br>Conv1D + BiLSTM + RR-interval features, inter-patient evaluation |
+| [`clinical_cnn_rnn.ipynb`](clinical_cnn_rnn.ipynb) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riicko-19/Models/blob/main/clinical_cnn_rnn.ipynb) | **A.** Pneumonia screening from pediatric chest X-rays<br>**B.** Arrhythmia detection from ECG heartbeats | Kermany et al. 2018 (5,856 X-rays)<br>MIT-BIH Arrhythmia DB (~100k beats) | CNN trained from scratch (5 conv blocks) + Grad-CAM<br>Conv1D + BiLSTM + RR-interval features, inter-patient evaluation |
 | [`xray_conditional_gan.ipynb`](xray_conditional_gan.ipynb) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riicko-19/Models/blob/main/xray_conditional_gan.ipynb) | Medical-imaging data scarcity & class imbalance | Same chest X-rays | Conditional GAN (projection D, spectral norm, hinge loss, DiffAugment, EMA) evaluated with FID, a memorisation check and TSTR / augmentation experiments |
 | [`clinical_ai_app/`](clinical_ai_app) | Interactive demo of all three models | — | Streamlit |
 
