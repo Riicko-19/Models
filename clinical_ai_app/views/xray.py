@@ -4,7 +4,7 @@ from core.models import SAMPLE_DIR, load_pneumonia_model, require_models
 from core.xray import load_xray, overlay, predict_with_cam
 
 st.title("🫁 Pneumonia screening from chest X-rays")
-st.caption("EfficientNet-B0 CNN · pediatric chest X-rays (ages 1–5) · Grad-CAM explanation")
+st.caption("Convolutional neural network (CNN) · pediatric chest X-rays (ages 1–5) · Grad-CAM explanation")
 
 require_models("pneumonia")
 model, default_threshold = load_pneumonia_model()

@@ -12,7 +12,7 @@ c1, c2, c3 = st.columns(3)
 with c1, st.container(border=True):
     st.subheader("🫁 Pneumonia X-ray")
     st.markdown(
-        "**CNN** — EfficientNet-B0 fine-tuned on 5,856 pediatric chest X-rays (Kermany et al., *Cell* 2018). "
+        "**CNN** — a convolutional neural network trained on 5,856 pediatric chest X-rays (Kermany et al., *Cell* 2018). "
         "Flags likely pneumonia at a sensitivity-first triage threshold and shows a **Grad-CAM** heatmap."
     )
     st.page_link("views/xray.py", label="Open X-ray screening", icon="➡️")
